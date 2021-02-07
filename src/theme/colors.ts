@@ -29,7 +29,7 @@ export const grey = {
   900: '#212121',
 }
 
-export const bg = '#171615';
+export const bg = '#FFFFFF';
 
 export const teal = {
   200: '#64ffda'

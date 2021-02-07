@@ -19,13 +19,13 @@ const Banks: React.FC = () => {
         <Route exact path={path}>
           <PageHeader
             title="Pick a Bank."
-            subtitle="Earn Basis Gold Shares by providing liquidity"
+            subtitle="Earn Big Mac Shares by providing liquidity"
           />
 
           { Date.now() / 1000 < 1610596800 ? [
             <LaunchCountdown
               deadline={new Date('2021-01-14T04:00:00Z')}
-              description="Earn Basis Gold by staking"
+              description="Earn Big Mac Index by staking"
               descriptionLink="#"
             />,
             <br></br>,

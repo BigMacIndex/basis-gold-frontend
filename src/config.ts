@@ -8,7 +8,7 @@ const configurations: { [env: string]: Configuration } = {
   development: {
     chainId: ChainId.MAINNET,
     etherscanUrl: 'https://etherscan.io',
-    defaultProvider: 'https://mainnet.infura.io/v3/12522e5176814bfda74dd672929641a3',
+    defaultProvider: 'https://mainnet.infura.io/v3/24b716d9283f48d38c82bc8fd0f91b45',
     deployments: require('./basis-gold/deployments/deployments.mainnet.json'),
     externalTokens: {
       DAI: ['0x6b175474e89094c44da98b954eedeac495271d0f', 18],

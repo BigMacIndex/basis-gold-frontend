@@ -76,7 +76,7 @@ const Boardroom: React.FC = () => {
           <>
             <PageHeader
               title="Join the Boardroom"
-              subtitle="Deposit Basis Gold Shares and earn inflationary rewards"
+              subtitle="Deposit Big Mac Shares and earn inflationary rewards"
             />
             {migrateNotice}
             <StyledHeader>
@@ -87,7 +87,7 @@ const Boardroom: React.FC = () => {
               />
               <Stat
                 title={goldStat ? `${goldStat.priceInDAI}` : '-'}
-                description="Next BSG/XAU (TWAP)"
+                description="Next BMI/XAU (TWAP)"
               />
               <Stat
                 title={parseFloat(scalingFactor) > 1 ? `x${scalingFactor}` : '-'}
@@ -96,7 +96,7 @@ const Boardroom: React.FC = () => {
               <Stat
                 title={
                   treasuryAmount
-                    ? `~${Humanize.compactInteger(getBalance(treasuryAmount), 2)} BSG`
+                    ? `~${Humanize.compactInteger(getBalance(treasuryAmount), 2)} BMI`
                     : '-'
                 }
                 description="Treasury Amount"

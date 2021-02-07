@@ -95,7 +95,7 @@ interface StyledButtonProps {
 
 const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
-  background-color: ${props => props.theme.color.grey[800]};
+  background-color: #CF240A;
   border: 0;
   border-radius: 12px;
   box-shadow: ${props => props.boxShadow};

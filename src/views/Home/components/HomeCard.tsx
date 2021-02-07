@@ -33,7 +33,7 @@ const HomeCard: React.FC<HomeCardProps> = ({
     <Wrapper>
       <CardHeader>{title}</CardHeader>
       <StyledCards>
-        <TokenSymbol symbol={symbol} />
+        {/* <TokenSymbol symbol={symbol} /> */}
         <CardSection>
           {priceInDAI ? (
             <StyledValue>{priceInDAI}</StyledValue>
@@ -61,15 +61,15 @@ const Wrapper = styled.div`
 `;
 
 const CardHeader = styled.h2`
-  color: #fff;
+  color: #FF2D08;
   text-align: center;
 `;
 
 const StyledCards = styled.div`
   min-width: 200px;
   padding: ${(props) => props.theme.spacing[3]}px;
-  color: ${(props) => props.theme.color.white};
-  background-color: ${(props) => props.theme.color.grey[900]};
+  color: #FF2D08;
+  background-color: #FFF10A;
   border-radius: 5px;
   @media (max-width: 768px) {
     width: 100%;
@@ -79,7 +79,7 @@ const StyledCards = styled.div`
 const StyledValue = styled.span`
   display: inline-block;
   font-size: 36px;
-  color: #eeeeee;
+  color: #000;
 `;
 
 const CardSection = styled.div`
@@ -97,7 +97,7 @@ const ValueSkeletonPadding = styled.div`
 
 const StyledSupplyLabel = styled.a`
   display: block;
-  color: ${(props) => props.color};
+  color: #CF240A;
 `;
 
 const ValueSkeleton = () => {

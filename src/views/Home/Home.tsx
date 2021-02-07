@@ -8,7 +8,7 @@ import HomeCard from './components/HomeCard';
 import { OverviewData } from './types';
 import useBasisGold from '../../hooks/useBasisGold';
 import config from '../../config';
-import Notice from '../../components/Notice';
+// import Notice from '../../components/Notice';
 
 const Home: React.FC = () => {
   const basisGold = useBasisGold();
@@ -39,8 +39,8 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        subtitle="Buy, sell, and provide liquidity for Basis Gold and Basis Gold Shares on Uniswap"
-        title="Welcome to Basis Gold!"
+        subtitle="Buy, sell, and provide liquidity for Big Macs and Big Mac Shares on Uniswap"
+        title="Welcome to Big Mac Index!"
       />
       { Date.now() / 1000 < 1610596800 ? (
         <LaunchCountdown
@@ -52,20 +52,20 @@ const Home: React.FC = () => {
         <Spacer size="md" />,
         <CardWrapper>
           <HomeCard
-            title="Basis Gold"
-            symbol="BSG"
-            color="#e9b64c"
+            title="Big Mac Index"
+            symbol="BMI"
+            color="#CF240A"
             supplyLabel="Circulating Supply"
             address={goldAddr}
             priceInDAI={gold?.priceInDAI}
             totalSupply={gold?.totalSupply}
-            priceText="BSG / XAU"
+            priceText="BMI / XAU"
           />
           <Spacer size="lg" />
           <HomeCard
-            title="Basis Share"
-            symbol="BSGS"
-            color="#4cb3ff"
+            title="Big Mac Share"
+            symbol="BMS"
+            color="#CF240A"
             address={shareAddr}
             priceInDAI={'$' + share?.priceInDAI}
             totalSupply={share?.totalSupply}
@@ -73,13 +73,13 @@ const Home: React.FC = () => {
           />
           <Spacer size="lg" />
           <HomeCard
-            title="Basis Bond"
-            symbol="BSGB"
-            color="#77e463"
+            title="Big Mac Bond"
+            symbol="BMB"
+            color="#CF240A"
             address={bondAddr}
             priceInDAI={ bond?.priceInDAI }
             totalSupply={ bond?.totalSupply }
-            priceText="BSGB / BSG"
+            priceText="BMB / BMI"
           />
         </CardWrapper>
       ]}
@@ -87,15 +87,15 @@ const Home: React.FC = () => {
   );
 };
 
-const StyledOverview = styled.div`
-  align-items: center;
-  display: flex;
-  @media (max-width: 768px) {
-    width: 100%;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-`;
+// const StyledOverview = styled.div`
+//   align-items: center;
+//   display: flex;
+//   @media (max-width: 768px) {
+//     width: 100%;
+//     flex-flow: column nowrap;
+//     align-items: center;
+//   }
+// `;
 
 const CardWrapper = styled.div`
   display: flex;

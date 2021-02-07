@@ -19,7 +19,7 @@ const StyledNav = styled.nav`
 `
 
 const StyledLink = styled(NavLink)`
-  color: ${props => props.theme.color.grey[400]};
+  color: ${props => props.theme.color.black};
   font-weight: 700;
   padding-left: ${props => props.theme.spacing[3]}px;
   padding-right: ${props => props.theme.spacing[3]}px;
@@ -28,7 +28,7 @@ const StyledLink = styled(NavLink)`
     color: ${props => props.theme.color.grey[500]};
   }
   &.active {
-    color: ${props => props.theme.color.primary.main};
+    color: #CF240A;
   }
 `
 
